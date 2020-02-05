@@ -12,7 +12,7 @@
     "fix": "eslint ./lib --fix",
     "commit": "commit",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
-    "postversion": "npm run commit &&git push origin --tags && git push",
+    "postversion": "npm run commit",
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major"
