@@ -1,6 +1,6 @@
 {
   "name": "ding_build",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "webpack配置包",
   "main": "index.js",
   "directories": {
@@ -13,9 +13,9 @@
     "commit": "commit",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "postversion": "npm run commit &&git push origin --tags && git push",
-    "patch":"npm version patch",
-    "minor":"npm version minor",
-    "major":"npm version major"
+    "patch": "npm version patch",
+    "minor": "npm version minor",
+    "major": "npm version major"
   },
   "keywords": [
     "webpack",
