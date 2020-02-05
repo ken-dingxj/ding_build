@@ -10,7 +10,12 @@
   "scripts": {
     "test": "npm run test",
     "fix": "eslint ./lib --fix",
-    "commit": "commit"
+    "commit": "commit",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "postversion": "npm run commit &&git push origin --tags && git push",
+    "patch":"npm version patch",
+    "minor":"npm version minor",
+    "major":"npm version major"
   },
   "keywords": [
     "webpack",
