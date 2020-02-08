@@ -1,3 +1,12 @@
+## [1.0.2](https://github.com/ken-dingxj/ding_build/compare/v1.0.1...v1.0.2) (2020-02-08)
+
+
+### Performance Improvements
+
+* **package:** 优化package.json ([0828303](https://github.com/ken-dingxj/ding_build/commit/0828303d0f9da98dd64cf3cf2e55d6f5e103a680))
+
+
+
 ## [1.0.1](https://github.com/ken-dingxj/ding_build/compare/v1.0.0...v1.0.1) (2020-02-05)
 
 
