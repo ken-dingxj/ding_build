@@ -8,7 +8,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npm run test",
+    "test": "nyc ./node_modules/.bin/_mocha",
+    "test:smoke": "node test/smoke/index.js",
     "fix": "eslint ./lib --fix",
     "patch": "npm version patch",
     "minor": "npm version minor",
@@ -27,16 +28,26 @@
     "@commitlint/config-angular": "^8.3.4",
     "@commitlint/config-conventional": "^8.3.4",
     "@commitlint/prompt-cli": "^8.3.4",
+    "assert": "^2.0.0",
     "babel-eslint": "^10.0.3",
     "conventional-changelog-cli": "^2.0.31",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.1",
-    "husky": "^4.2.1"
+    "husky": "^4.2.1",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "pre-commit": "npm test",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-push": "npm test"
     }
+  },
+  "dependencies": {
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.5"
   }
 }
