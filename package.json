@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "nyc ./node_modules/.bin/_mocha",
+    "test": "nyc ./node_modules/.bin/_mocha --recursive",
     "test1": "mocha --recursive",
     "test:smoke": "node test/smoke/index.js",
     "fix": "eslint ./lib --fix",
