@@ -29,4 +29,11 @@ module.exports = {
      */
     cssSourceMap: true,
   },
+  build: {
+    mode: 'production',
+    devtool: '#source-map',
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+    assetsRoot: path.resolve(__dirname, '../dist'),
+  },
 };
